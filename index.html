@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歡迎來到雷奧奈達！《GTA VI》終極推坑專頁</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+<!-- ===== Rockstar 風格電影級開場過場動畫 ===== -->
+  <div id="rstar-intro">
+    <div class="intro-content">
+      <div class="intro-badge">ROCKSTAR GAMES PRESENTS</div>
+      <div class="intro-logo">GRAND THEFT AUTO <span class="vi-glow">VI</span></div>
+      <p class="intro-sub">WELCOME TO LEONIDA • VICE CITY 2026</p>
+      <button type="button" id="enterBtn" class="intro-btn">進入罪惡城市 ENTER</button>
+    </div>
+  </div>
+
+
+  <!-- ===== 封面區 Header ===== -->
+  <header>
+    <div>
+      <span class="badge-tag">NOW AVAILABLE • LEONIDA 2026</span>
+      <h1>歡迎來到罪惡城市！<br>《GTA VI》終極推坑指南</h1>
+      <p>等了整整十三年，開放世界的天花板終於降臨。用<strong>一個網頁</strong>帶你直擊雷奧奈達州的瘋狂魅力！</p>
+    </div>
+  </header>
+
+  <!-- ===== 導覽選單 + 新增互動工具按鈕 ===== -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="#why">五大入坑理由</a></li>
+        <li><a href="#rank">系列神作排行</a></li>
+        <li><a href="#route">新手生存路線</a></li>
+        <li><a href="#guestbook">玩家集結留言板</a></li>
+      </ul>
+      <div class="nav-tools">
+        <button type="button" class="tool-btn" id="themeToggle">☀️ 切換夕陽模式</button>
+        <button type="button" class="tool-btn" id="synthBtn">🎵 播放音樂</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== 區塊 1：推坑理由 ===== -->
+    <section id="why">
+      <h2>🌴 為什麼這輩子一定要玩《GTA VI》？</h2>
+      <p>如果你還在猶豫要不要踏進雷奧奈達州（Leonida），這五個理由會讓你立刻想請假開玩：</p>
+      <ol>
+        <li><strong>雙主角犯罪羅曼史</strong>：系列首位女性主角露西亞（Lucia）與搭檔傑森，演繹現代版「邦妮與克萊德」的亡命之徒史詩。</li>
+        <li><strong>活生生的社群生態</strong>：NPC 不再只是路人，他們會開直播、拍短影音、在海灘開派對，整個城市彷彿有自己的靈魂。</li>
+        <li><strong>現世代光影與水體物理</strong>：從罪惡城市（Vice City）的霓虹夜店到大沼澤地的鱷魚生態，每一幀截圖都能當桌布。</li>
+        <li><strong>史上最大地圖尺度</strong>：橫跨繁華都會、陽光沙灘、鄉村小鎮與危險濕地，海陸空載具自由穿梭零死角。</li>
+        <li><strong>現世代主機完美優化</strong>：無論在 PS5 還是 Xbox Series S/X 上，都能體驗無縫切換場景的極致流暢感。</li>
+      </ol>
+
+      <article>
+        <h3>🎮 我的十年等坑心得</h3>
+        <p>從當年通關《GTA IV》的自由城暗黑故事，到《GTA V》洛聖都的三主角搶劫，Rockstar 每次出手都在重新定義「開放世界」。今天終於正式踏上雷奧奈達的土地，這種與全球玩家同步見證歷史的感動，無可取代！</p>
+      </article>
+    </section>
+
+    <!-- ===== 區塊 2：排行榜表格（新增類別篩選功能） ===== -->
+    <section id="rank">
+      <h2>🏆 Rockstar 開放世界神作排行榜</h2>
+      <div class="filter-bar">
+        <button type="button" class="filter-chip active" data-filter="all">全部顯示</button>
+        <button type="button" class="filter-chip" data-filter="modern">現代都市題材</button>
+        <button type="button" class="filter-chip" data-filter="classic">經典時代題材</button>
+      </div>
+      <div class="table-wrap">
+        <table id="rankTable">
+          <caption>個人主觀深度評比，滿分 5 顆星</caption>
+          <thead>
+            <tr>
+              <th>名次</th>
+              <th>作品名稱</th>
+              <th>舞台背景</th>
+              <th>必玩亮點</th>
+              <th>推薦指數</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-category="modern">
+              <td>🥇</td>
+              <td><strong>Grand Theft Auto VI</strong></td>
+              <td>2026 雷奧奈達州</td>
+              <td>雙主角敘事、極致生態細節</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr data-category="classic">
+              <td>🥈</td>
+              <td><strong>Red Dead Redemption 2</strong></td>
+              <td>1899 美國西部</td>
+              <td>神級劇本與沉浸式荒野體驗</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr data-category="modern">
+              <td>🥉</td>
+              <td><strong>Grand Theft Auto V</strong></td>
+              <td>2013 洛聖都</td>
+              <td>三主角切換與線上模式神話</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr data-category="modern">
+              <td>4</td>
+              <td><strong>Grand Theft Auto IV</strong></td>
+              <td>2008 自由市</td>
+              <td>寫實物理引擎與沉重移民悲歌</td>
+              <td>★★★★☆</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== 區塊 3：新手路線與外部連結 ===== -->
+    <section id="route">
+      <h2>🗺️ 雷奧奈達新手生存路線</h2>
+      <p>剛下飛機不知道去哪？照著這份攻略走，保證不迷路：</p>
+      <ul>
+        <li><strong>第一站：罪惡海灘（Vice Beach）</strong> — 先感受 4K 光影下的陽光與超跑聚會，熟悉操作手感。</li>
+        <li><strong>第二站：改裝車廠與武器店</strong> — 存下第一桶金後，優先升級防彈背心與愛車性能。</li>
+        <li><strong>第三站：探索大沼澤區</strong> — 體驗動態天氣系統，小心潛伏在水面下的野生鱷魚！</li>
+        <li><strong>官方情報站</strong>：前往 <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">Rockstar Games《GTA VI》官方網站</a> 觀看高畫質預告片與最新更新公告。</li>
+        <li><strong>背景資料查詢</strong>：想補齊前作劇情？推薦閱讀 <a href="https://zh.wikipedia.org/zh-tw/%E4%BF%A0%E7%9B%9C%E7%8D%B5%E8%BB%8A%E6%89%8BVI" target="_blank" rel="noopener">《俠盜獵車手 VI》維基百科專頁</a> 了解完整開發歷程。</li>
+      </ul>
+    </section>
+
+    <!-- ===== 區塊 4：互動留言表單 + 即時留言牆 ===== -->
+    <section id="guestbook">
+      <h2>✍️ 玩家集結留言板（支援即時發布！）</h2>
+      <p>準備好進入罪惡城市了嗎？留下你的玩家代號與期待心得，系統會立即將你的留言張貼到下方看板！</p>
+      
+      <form id="commentForm">
+        <div>
+          <label for="nickname">玩家代號 / 暱稱 *</label>
+          <input type="text" id="nickname" required placeholder="例如：Leonida_Driver">
+        </div>
+        <div>
+          <label for="email">聯絡 Email（選填，不會公開）</label>
+          <input type="email" id="email" placeholder="gamer@example.com">
+        </div>
+        <fieldset>
+          <legend>入坑狀態</legend>
+          <label><input type="radio" name="level" value="觀望中 👀"> 觀望中 👀</label>
+          <label><input type="radio" name="level" value="已預載開衝 🔥" checked> 已預載開衝 🔥</label>
+          <label><input type="radio" name="level" value="系列老司機 🏎️"> 系列老司機 🏎️</label>
+        </fieldset>
+        <div>
+          <label for="favorite">最期待的遊戲要素</label>
+          <select id="favorite">
+            <option value="露西亞與傑森雙主角劇情">露西亞與傑森雙主角劇情</option>
+            <option value="罪惡城市霓虹夜生活">罪惡城市霓虹夜生活</option>
+            <option value="超跑改裝與街頭競速">超跑改裝與街頭競速</option>
+            <option value="線上模式與好友搶劫">線上模式與好友搶劫</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">想說的話 *</label>
+          <textarea id="message" rows="3" required placeholder="寫下你最想在罪惡城市做的第一件事…"></textarea>
+        </div>
+        <label style="color: var(--ink); font-weight: 500; cursor: pointer;">
+          <input type="checkbox" id="notifyCheck" checked> 訂閱雷奧奈達週末線上揪團通知
+        </label>
+        <button type="submit">發布留言到看板 🚀</button>
+      </form>
+
+      <!-- 新增功能：即時動態留言顯示區 -->
+      <div class="comment-wall" id="commentWall">
+        <h3 style="margin-bottom: 4px;">💬 最新玩家留言 (<span id="commentCount">2</span>)</h3>
+        <div class="comment-item">
+          <div class="comment-header">
+            <div><strong>Eric (站長)</strong> <span class="comment-badge">已預載開衝 🔥</span></div>
+            <span style="font-size: 0.8rem; color: var(--soft);">聚焦：罪惡城市霓虹夜生活</span>
+          </div>
+          <p style="margin: 0;">今天終於正式解鎖！第一件事就是開著跑車沿著海岸線聽 80 年代電台兜風！</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header">
+            <div><strong>ViceCity_Rider</strong> <span class="comment-badge">系列老司機 🏎️</span></div>
+            <span style="font-size: 0.8rem; color: var(--soft);">聚焦：露西亞與傑森雙主角劇情</span>
+          </div>
+          <p style="margin: 0;">畫面細節太誇張了，光影跟 NPC 的反應完全是另一個世代的遊戲。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 側欄 Aside ===== -->
+    <aside>
+      <h2>📌 雷奧奈達冷知識</h2>
+      <ul>
+        <li>🌴 <strong>地圖原型</strong>：雷奧奈達州靈感源自美國佛羅里達州，罪惡城市則對應邁阿密。</li>
+        <li>🐊 <strong>生態模擬</strong>：遊戲內收錄超過數十種野生動物，甚至會出現鱷魚闖入超商的趣味事件。</li>
+        <li>📻 <strong>電台文化</strong>：系列招牌的車載廣播電台再度升級，涵蓋 80s 合成器流行、拉丁舞曲與嘻哈。</li>
+      </ul>
+
+      <div class="stat-box">
+        <h3 style="font-size: 1rem; margin-bottom: 10px;">📊 期待度指標</h3>
+        <div class="stat-label"><span>開放世界自由度</span><span>100%</span></div>
+        <div class="stat-bar"><div class="stat-fill" style="width: 100%;"></div></div>
+        
+        <div class="stat-label"><span>畫面與物理細節</span><span>98%</span></div>
+        <div class="stat-bar"><div class="stat-fill" style="width: 98%;"></div></div>
+        
+        <div class="stat-label"><span>熬夜爆肝指數</span><span>95%</span></div>
+        <div class="stat-bar"><div class="stat-fill" style="width: 95%;"></div></div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- ===== 頁尾 Footer ===== -->
+  <footer>
+    <p>© 2026 雷奧奈達推坑委員會 ・ 沈昱呈 創意網頁設計作品</p>
+    <p><a href="#">↑ 回到頁面頂端</a></p>
+  </footer>
+
+  <!-- ===== 新增功能腳本：主題切換、表格篩選、即時留言板、Web Audio 合成音效 ===== -->
+  <script>
+    // 1. 日夜雙主題切換
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('theme-sunset');
+      const isSunset = document.body.classList.contains('theme-sunset');
+      themeToggle.textContent = isSunset ? '🌙 切換霓虹午夜' : '☀️ 切換夕陽模式';
+    });
+
+    // 2. 排行榜互動篩選器
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const tableRows = document.querySelectorAll('#rankTable tbody tr');
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        const filter = chip.dataset.filter;
+        tableRows.forEach(row => {
+          row.style.display = (filter === 'all' || row.dataset.category === filter) ? '' : 'none';
+        });
+      });
+    });
+
+    // 3. 即時動態留言板 (表單送出不重整，直接新增卡片)
+    const commentForm = document.getElementById('commentForm');
+    const commentWall = document.getElementById('commentWall');
+    const commentCount = document.getElementById('commentCount');
+    let count = 2;
+
+    commentForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nickname = document.getElementById('nickname').value.trim();
+      const level = document.querySelector('input[name="level"]:checked').value;
+      const favorite = document.getElementById('favorite').value;
+      const message = document.getElementById('message').value.trim();
+
+      if (!nickname || !message) return;
+
+      const item = document.createElement('div');
+      item.className = 'comment-item';
+      item.innerHTML = `
+        <div class="comment-header">
+          <div><strong>${escapeHTML(nickname)}</strong> <span class="comment-badge">${escapeHTML(level)}</span></div>
+          <span style="font-size: 0.8rem; color: var(--soft);">聚焦：${escapeHTML(favorite)}</span>
+        </div>
+        <p style="margin: 0;">${escapeHTML(message)}</p>
+      `;
+
+      commentWall.insertBefore(item, commentWall.children[1]);
+      count++;
+      commentCount.textContent = count;
+      commentForm.reset();
+    });
+
+    function escapeHTML(str) {
+      return str.replace(/[&<>"']/g, m => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[m]));
+    }
+
+// 4. 播放/停止自訂背景音樂 (支援再次點擊停止)
+    const synthBtn = document.getElementById('synthBtn');
+    const bgmAudio = new Audio('music/S1.mp3');
+    bgmAudio.loop = true;
+
+    synthBtn.addEventListener('click', () => {
+      if (bgmAudio.paused) {
+        bgmAudio.play();
+        synthBtn.textContent = '⏹️ 停止播放音樂';
+      } else {
+        bgmAudio.pause();
+        synthBtn.textContent = '🎵 播放音樂';
+      }
+    });
+    // 5. Rockstar 風格開場過場控制
+    const introOverlay = document.getElementById('rstar-intro');
+    const enterBtn = document.getElementById('enterBtn');
+
+    function closeIntro() {
+      introOverlay.classList.add('hide-intro');
+      // 點擊進入時，若音樂尚未播放則自動開始播放主題曲
+      if (bgmAudio && bgmAudio.paused) {
+        bgmAudio.play().then(() => {
+          synthBtn.textContent = '⏹️ 停止播放音樂';
+        }).catch(() => {});
+      }
+    }
+
+    enterBtn.addEventListener('click', closeIntro);
+  </script>
+
+</body>
+</html>
